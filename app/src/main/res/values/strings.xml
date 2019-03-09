@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="true">C A F F I N A</string>
+    <string name="FACEBOOK_APP_ID">300493970546853</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">fcaccf7923ea49e36666f6a8f1aea5e9</string>
+    <string name="Nav_Open">Open</string>
+    <string name="Nav_Close">Close</string>
+    <string name="title_activity_nearby_stores">Map</string>
+
+</resources>

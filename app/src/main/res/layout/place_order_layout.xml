@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:hint="Comment.."
+        android:id="@+id/CommentEditText"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/userAddress"
+            android:checked="true"
+            android:text="User Address"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:id="@+id/other_address"
+            android:layout_weight="1"
+            android:text="Other ddress"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:hint=" Other address.."
+        android:enabled="false"
+        android:id="@+id/other_addressEditText"
+        android:layout_height="wrap_content" />
+</LinearLayout>

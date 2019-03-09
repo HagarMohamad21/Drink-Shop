@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    android:padding="15dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:met_floatingLabel="highlight"
+        android:padding="5dp"
+        android:id="@+id/edit_name"
+        android:textColor="@color/darkBrown"
+        /> <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        app:met_floatingLabel="highlight"
+        android:padding="5dp"
+        android:id="@+id/edit_address"
+        android:textColor="@color/darkBrown"
+        /> <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birthdate: example> yyyy-mm-dd"
+        app:met_floatingLabel="highlight"
+        android:padding="5dp"
+        android:id="@+id/edit_birthdate"
+    android:digits="0123456789-"
+        android:textColor="@color/darkBrown"
+        />
+</LinearLayout>
+</android.support.design.card.MaterialCardView>

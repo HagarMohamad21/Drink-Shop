@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:padding="20dp"
+    android:background="@drawable/dialog_back"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/drinkImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drinkName"
+            android:textSize="20sp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/darkBrown"
+            android:text="Milk Shake"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:id="@+id/quntityText"
+            android:layout_gravity="center_vertical"
+            android:text="Quntity"/>
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/Quantity"
+            app:initialNumber="1"
+            app:finalNumber="100"
+            android:layout_toRightOf="@id/quntityText"
+            android:background="@color/darkBrown"
+            app:backGroundColor="@color/darkBrown"
+            android:layout_gravity="center_vertical">
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+    </RelativeLayout>
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comment"
+        android:minLines="2"
+        android:padding="3dp"
+        android:lines="1"/>
+    <ScrollView
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <!--group two size -->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/darkBrown"
+                   android:textStyle="bold"
+                   android:text="Choose Size of Cup (Required) "/>
+               <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/mediumCup"
+                       android:text="Medium"/>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/largeCup"
+                       android:text="Large"/>
+               </RadioGroup>
+           </LinearLayout> <!--group two sugar -->
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/darkBrown"
+                   android:textStyle="bold"
+                   android:text="Choose Sugar of Cup (Required) "/>
+               <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/full"
+                       android:text="100%"/>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/meduim"
+                       android:text="70%"/>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/half"
+                       android:text="50%"/>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/free"
+                       android:text="free"/>
+               </RadioGroup>
+           </LinearLayout>
+           <!--group three Ice -->
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/darkBrown"
+                   android:textStyle="bold"
+                   android:text="Choose Ice of Cup (Required) "/>
+               <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/fullIced"
+                       android:text="Full"/>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/meduimIced"
+                       android:text="Meduim"/>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/halfIced"
+                       android:text="Half"/>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/freeIced"
+                       android:text="free"/>
+               </RadioGroup>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/darkBrown"
+                   android:textStyle="bold"
+                   android:text="Choose Toppings of Cup "/>
+               <android.support.v7.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/toppingList">
+               </android.support.v7.widget.RecyclerView>
+           </LinearLayout>
+       </LinearLayout>
+        <!--group three Ice -->
+
+    </ScrollView>
+
+
+</LinearLayout>
