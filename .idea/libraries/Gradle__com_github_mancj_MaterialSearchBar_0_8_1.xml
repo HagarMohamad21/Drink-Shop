@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mancj:MaterialSearchBar-0.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/MaterialSearchBar-0.8.1.aar/54494f46d173054f815f91d9019a726a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/MaterialSearchBar-0.8.1.aar/54494f46d173054f815f91d9019a726a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mancj/MaterialSearchBar/0.8.1/cf87d5a43be2db5120dabbd3e21a01a9e710c2fe/MaterialSearchBar-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
